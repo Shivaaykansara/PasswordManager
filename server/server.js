@@ -7,7 +7,7 @@ const passRouter = require('./routers/pass-router')
 const cors = require('cors')
 
 const corsOption = {
-    origin:'http://localhost:5173',
+    origin:'https://passwordmanager-frontend-0rjt.onrender.com',
     method:'GET,PUT,POST,PATCH,DELETE,HEAD',
     credentials:true
 }
