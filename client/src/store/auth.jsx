@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [prevPass, setPrevPass] = useState([]);
-  const API = `http://localhost:5000/api`;
+  const API = `https://passwordmanager-backend-an3g.onrender.com/api`;
   const storeTokenInLS = (token) => {
     setToken(token);
     return localStorage.setItem("token", token);
